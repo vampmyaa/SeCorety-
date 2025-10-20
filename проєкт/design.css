@@ -1,0 +1,139 @@
+/* ===== БАЗОВА ТЕМА ===== */
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #cfd8dc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(180deg, #0a0c10 0%, #11161c 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* ===== ХЕДЕР ===== */
+header {
+    width: 100%;
+    padding: 60px 0 40px;
+    background: linear-gradient(180deg, #090b0f 0%, #0d1116 100%);
+    border-bottom: 1px solid #1f242b;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+#logo:hover {
+    opacity: 0.8;
+}
+
+/* ===== КОНТЕЙНЕР ===== */
+.container {
+    max-width: 850px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+h2 {
+    color: #258297; /* спокійний блакитний */
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, #79aaff, #00b8a9);
+    opacity: 0.5;
+}
+
+h3 {
+    color: #00bfa6;
+    font-weight: 600;
+}
+
+/* ===== ПРОЄКТ ===== */
+.project {
+    background: #15191f;
+    border: 1px solid #1e252c;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 40px;
+    text-align: left;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(0, 255, 200, 0.1);
+}
+
+.project p {
+    margin-top: 5px00;
+    line-height: 1.6;
+    color: #cfd8dc;
+}
+
+.project strong {
+    color: #00bfa6;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.video-container iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+}
+
+/* ===== ФУТЕР ===== */
+footer {
+    background: #0d1116;
+    border-top: 1px solid #1f242b;
+    padding: 20px;
+    margin-top: 60px;
+    color: #7a8c99;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .project {
+        padding: 20px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    #logo {
+        width: 150px;
+    }
+}
